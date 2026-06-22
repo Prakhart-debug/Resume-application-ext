@@ -1,0 +1,178 @@
+\documentclass[a4paper]{article}
+
+% === TRUE 10.5pt FONT SIZE ===
+\usepackage[fontsize=10.75pt]{fontsize}
+
+% === FONT: HELVETICA ===
+\usepackage[scaled]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[T1]{fontenc}
+
+% === PAGE SETUP ===
+\usepackage[left=0.4in,top=0.3in,right=0.4in,bottom=0.3in]{geometry}
+
+\usepackage{latexsym}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+
+% === GLYPHS ===
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+% === HEADER/FOOTER ===
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% === SECTION FORMATTING ===
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% === CUSTOM COMMANDS ===
+\newcommand{\resumeItem}[1]{
+  \item\normalsize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+% === LIST FORMATTING ===
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[label=\textbullet]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% === RESUME STARTS HERE ===
+\begin{document}
+
+% === HEADER ===
+\begin{center}
+    \textbf{\huge \scshape Prakhar Tripathi} \\ \vspace{1pt}
+    \small +1 (201) 898 9396 $|$ \href{mailto:ptripath1@stevens.edu}{\underline{ptripath1@stevens.edu}}
+    \href{https://github.com/prakhart-debug}{\underline{GitHub}} $|$ \href{https://www.linkedin.com/in/praxyt/}{\underline{LinkedIn}} $|$ \href{http://prakhar-portfolio6.netlify.app/}{\underline{Portfolio}}$|$ Hoboken, NJ
+\end{center}
+\vspace{-16pt}
+
+% === EDUCATION ===
+\section{Education}
+\resumeSubHeadingListStart
+    \resumeSubheading
+      {Stevens Institute of Technology}{Hoboken, NJ}
+      {Master of Science in Computer Science}{Jan 2025 - Dec 2026}
+      \resumeItemListStart
+        \resumeItem{Relevant Coursework: Cloud Systems, Applied Machine Learning, Natural Language Processing, .}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Manipal Institute of Technology}{Manipal, India}
+      {Bachelor of Technology in Computer and Communications Engineering}{Oct 2020 - Jun 2024}
+      \resumeItemListStart
+        \resumeItem{Relevant Coursework: Computer Architecture, Distributed Computing, Object-Oriented Design, Data Structures.}
+      \resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-27pt}
+
+% === SKILLS ===
+\section{Technical Proficiencies}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: {{LANGUAGES}}} \\
+     \textbf{Data \& AI}{: {{DATA_AI}}} \\
+     \textbf{Tools \& Automation}{: {{TOOLS_AUTOMATION}}}
+    }}
+\end{itemize}
+\vspace{-15pt}
+% === EXPERIENCE ===
+\section{Experience}
+\resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Engineering Intern}{Hyderabad, India}
+      {Genpact}{Feb 2024 - Aug 2024}
+      \resumeItemListStart
+        \resumeItem{{{GENPACT_BULLET_1}}}
+        \resumeItem{{{GENPACT_BULLET_2}}}
+        \resumeItem{{{GENPACT_BULLET_3}}}
+      \resumeItemListEnd
+\vspace{3 pt}
+    \resumeSubheading
+      {Software Development Engineer}{Manipal, India}
+      {Accelth Technologies Pvt Ltd}{Jun 2023 - Aug 2023}
+      \resumeItemListStart
+        \resumeItem{{{ACCELTH_BULLET_1}}}
+        \resumeItem{{{ACCELTH_BULLET_2}}}
+        \resumeItem{{{ACCELTH_BULLET_3}}}
+      \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-13pt}
+% === PROJECTS ===
+\section{Projects}
+\resumeSubHeadingListStart
+
+    \resumeProjectHeading
+        {\textbf{{{PROJECT_1_NAME}}} $|$ \emph{{{PROJECT_1_STACK}}}}{}
+        \resumeItemListStart
+            \resumeItem{{{PROJECT_1_BULLET_1}}}
+            \resumeItem{{{PROJECT_1_BULLET_2}}}
+            \resumeItem{{{PROJECT_1_BULLET_3}}}
+        \resumeItemListEnd
+\vspace{-1 pt}
+
+    \resumeProjectHeading
+    {\textbf{{{PROJECT_2_NAME}}} $|$ \emph{{{PROJECT_2_STACK}}}}{}
+    \resumeItemListStart
+        \resumeItem{{{PROJECT_2_BULLET_1}}}
+        \resumeItem{{{PROJECT_2_BULLET_2}}}
+        \resumeItem{{{PROJECT_2_BULLET_3}}}
+    \resumeItemListEnd
+\vspace{-1 pt}
+
+    \resumeProjectHeading
+        {\textbf{{{PROJECT_3_NAME}}} $|$ \emph{{{PROJECT_3_STACK}}}}{}
+        \resumeItemListStart
+            \resumeItem{{{PROJECT_3_BULLET_1}}}
+            \resumeItem{{{PROJECT_3_BULLET_2}}}
+        \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-5 pt}
+
+% === AWARDS & ACCOMPLISHMENTS ===
+\section{Awards \& Accomplishments}
+\resumeSubHeadingListStart
+    \resumeItem{Won InnovateFest 22 at MIT Manipal by showcasing our company Accelth product.}
+    \resumeItem{Secured an extraordinary 442nd World Rank globally in the Forensics category at ArmstrongCTF'22.}
+    \resumeItem{Recognized as a Top 2\% Global Intern among 700+ participants in Genpact's selective NextGen builder program.}
+\resumeSubHeadingListEnd
+
+\end{document}
