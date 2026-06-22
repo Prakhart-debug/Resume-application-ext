@@ -1,4 +1,4 @@
-# Resume Tailor — Chrome Extension
+# Resume Tailor: Chrome Extension
 
 > Scrapes job descriptions from LinkedIn, Indeed, and Accenture · Sends them to Gemini AI · Downloads a fully tailored LaTeX resume + cover letter in seconds.
 
